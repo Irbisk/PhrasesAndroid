@@ -1,0 +1,1672 @@
+type: edu
+files:
+  - name: src/main/java/org/hyperskill/phrases/MainActivity.kt
+    visible: true
+    text: |-
+      package org.hyperskill.phrases
+      
+      import android.os.Bundle
+      import androidx.appcompat.app.AppCompatActivity
+      
+      class MainActivity : AppCompatActivity() {
+          override fun onCreate(savedInstanceState: Bundle?) {
+              super.onCreate(savedInstanceState)
+              setContentView(R.layout.activity_main)
+          }
+      }
+    learner_created: false
+  - name: src/main/res/drawable/ic_launcher_background.xml
+    visible: true
+    text: |
+      <?xml version="1.0" encoding="utf-8"?>
+      <vector xmlns:android="http://schemas.android.com/apk/res/android"
+          android:width="108dp"
+          android:height="108dp"
+          android:viewportWidth="108"
+          android:viewportHeight="108">
+          <path
+              android:fillColor="#008577"
+              android:pathData="M0,0h108v108h-108z" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M9,0L9,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,0L19,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M29,0L29,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M39,0L39,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M49,0L49,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M59,0L59,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M69,0L69,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M79,0L79,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M89,0L89,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M99,0L99,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,9L108,9"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,19L108,19"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,29L108,29"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,39L108,39"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,49L108,49"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,59L108,59"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,69L108,69"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,79L108,79"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,89L108,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,99L108,99"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,29L89,29"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,39L89,39"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,49L89,49"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,59L89,59"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,69L89,69"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,79L89,79"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M29,19L29,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M39,19L39,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M49,19L49,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M59,19L59,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M69,19L69,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M79,19L79,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+      </vector>
+    learner_created: false
+  - name: src/main/res/drawable-v24/ic_launcher_foreground.xml
+    visible: true
+    text: |
+      <vector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:aapt="http://schemas.android.com/aapt"
+          android:width="108dp"
+          android:height="108dp"
+          android:viewportWidth="108"
+          android:viewportHeight="108">
+          <path
+              android:fillType="evenOdd"
+              android:pathData="M32,64C32,64 38.39,52.99 44.13,50.95C51.37,48.37 70.14,49.57 70.14,49.57L108.26,87.69L108,109.01L75.97,107.97L32,64Z"
+              android:strokeWidth="1"
+              android:strokeColor="#00000000">
+              <aapt:attr name="android:fillColor">
+                  <gradient
+                      android:endX="78.5885"
+                      android:endY="90.9159"
+                      android:startX="48.7653"
+                      android:startY="61.0927"
+                      android:type="linear">
+                      <item
+                          android:color="#44000000"
+                          android:offset="0.0" />
+                      <item
+                          android:color="#00000000"
+                          android:offset="1.0" />
+                  </gradient>
+              </aapt:attr>
+          </path>
+          <path
+              android:fillColor="#FFFFFF"
+              android:fillType="nonZero"
+              android:pathData="M66.94,46.02L66.94,46.02C72.44,50.07 76,56.61 76,64L32,64C32,56.61 35.56,50.11 40.98,46.06L36.18,41.19C35.45,40.45 35.45,39.3 36.18,38.56C36.91,37.81 38.05,37.81 38.78,38.56L44.25,44.05C47.18,42.57 50.48,41.71 54,41.71C57.48,41.71 60.78,42.57 63.68,44.05L69.11,38.56C69.84,37.81 70.98,37.81 71.71,38.56C72.44,39.3 72.44,40.45 71.71,41.19L66.94,46.02ZM62.94,56.92C64.08,56.92 65,56.01 65,54.88C65,53.76 64.08,52.85 62.94,52.85C61.8,52.85 60.88,53.76 60.88,54.88C60.88,56.01 61.8,56.92 62.94,56.92ZM45.06,56.92C46.2,56.92 47.13,56.01 47.13,54.88C47.13,53.76 46.2,52.85 45.06,52.85C43.92,52.85 43,53.76 43,54.88C43,56.01 43.92,56.92 45.06,56.92Z"
+              android:strokeWidth="1"
+              android:strokeColor="#00000000" />
+      </vector>
+    learner_created: false
+  - name: src/main/res/layout/activity_main.xml
+    visible: true
+    text: |-
+      <?xml version="1.0" encoding="utf-8"?>
+      <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:context=".MainActivity">
+      
+      
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    learner_created: false
+  - name: src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+    visible: true
+    text: |-
+      <?xml version="1.0" encoding="utf-8"?>
+      <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+          <background android:drawable="@drawable/ic_launcher_background" />
+          <foreground android:drawable="@drawable/ic_launcher_foreground" />
+      </adaptive-icon>
+    learner_created: false
+  - name: src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+    visible: true
+    text: |-
+      <?xml version="1.0" encoding="utf-8"?>
+      <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+          <background android:drawable="@drawable/ic_launcher_background" />
+          <foreground android:drawable="@drawable/ic_launcher_foreground" />
+      </adaptive-icon>
+    learner_created: false
+  - name: src/main/res/values/colors.xml
+    visible: true
+    text: |
+      <?xml version="1.0" encoding="utf-8"?>
+      <resources>
+          <color name="colorPrimary">#008577</color>
+          <color name="colorPrimaryDark">#00574B</color>
+          <color name="colorAccent">#D81B60</color>
+      </resources>
+    learner_created: false
+  - name: src/main/res/values/strings.xml
+    visible: true
+    text: |
+      <resources>
+          <string name="app_name">Phrases</string>
+      </resources>
+    learner_created: false
+  - name: src/main/res/values/styles.xml
+    visible: true
+    text: |
+      <resources>
+      
+          <!-- Base application theme. -->
+          <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+              <!-- Customize your theme here. -->
+              <item name="colorPrimary">@color/colorPrimary</item>
+              <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+              <item name="colorAccent">@color/colorAccent</item>
+          </style>
+      
+      </resources>
+    learner_created: false
+  - name: src/main/AndroidManifest.xml
+    visible: true
+    text: |-
+      <?xml version="1.0" encoding="utf-8"?>
+      <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="org.hyperskill.phrases">
+      
+        <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+          <activity android:name="org.hyperskill.phrases.MainActivity">
+            <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+      
+              <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+          </activity>
+        </application>
+      
+      </manifest>
+    learner_created: false
+  - name: src/test/java/org/hyperskill/phrases/internals/AbstractUnitTest.kt
+    visible: false
+    text: |-
+      package org.hyperskill.phrases.internals
+      
+      import android.app.Activity
+      import android.app.AlertDialog
+      import android.app.Dialog
+      import android.content.Context
+      import android.content.Intent
+      import android.database.sqlite.SQLiteDatabase
+      import android.database.sqlite.SQLiteOpenHelper
+      import android.os.Bundle
+      import android.view.View
+      import androidx.recyclerview.widget.RecyclerView
+      import org.junit.Assert.*
+      import org.robolectric.Robolectric
+      import org.robolectric.Shadows.shadowOf
+      import org.robolectric.android.controller.ActivityController
+      import org.robolectric.shadow.api.Shadow
+      import org.robolectric.shadows.ShadowActivity
+      import org.robolectric.shadows.ShadowAlertDialog
+      import org.robolectric.shadows.ShadowLooper
+      import org.robolectric.shadows.ShadowToast
+      import java.time.Duration
+      import java.util.concurrent.TimeUnit
+      
+      // version 1.2
+      abstract class AbstractUnitTest<T : Activity>(clazz: Class<T>) {
+      
+          /**
+           * Setup and control activities and their lifecycle
+           */
+          val activityController: ActivityController<T> by lazy {
+              Robolectric.buildActivity(clazz)
+          }
+      
+          /**
+           * The activity being tested.
+           *
+           * It is the @RealObject of the shadowActivity
+           */
+          val activity : Activity by lazy {
+              activityController.get()
+          }
+      
+          /**
+           * A Roboletric shadow object of the Activity class, contains helper methods to deal with
+           * testing activities like setting permissions, peeking results of launched activities for result,
+           * retrieving shown dialogs, intents and others.
+           *
+           * If you don't know what shadows are you can have a better understanding on that reading this
+           * on roboletric documentation: http://robolectric.org/extending/
+           *
+           * Understanding Shadows is fundamental for Roboletric, things are not what they appear to be on
+           * Roboletric because running a code on the jvm is not the same as running the code on a real/emulated device.
+           * Code that expects to eventually talk to the machine won't have the machine they expect to have to talk to.
+           * Shadow is how Roboletric makes things possible, they impersonate @RealObject and act when @RealObject is expected to act.
+           *
+           * Things in Roboletric are not what they appear to be.
+           * It is possible to not notice it for the most part, but it will be essential for some other parts
+           */
+          val shadowActivity: ShadowActivity by lazy {
+              Shadow.extract(activity)
+          }
+      
+          /**
+           * A Roboletric shadow object of the mainLooper. Handles enqueued runnables and also the passage of time.
+           *
+           * Usually used with .idleFor(someDurationValue) or .runToEndOfTasks()
+           */
+          val shadowLooper: ShadowLooper by lazy {
+              shadowOf(activity.mainLooper)
+          }
+      
+          /**
+           * Sets up activity for tests and ensures better error messages displayed
+           * when tests are run with check button and exceptions are thrown by user implementation.
+           *
+           * returns a value for convenience use, like in tests that involve navigation between Activities
+           */
+          fun <ReturnValue> testActivity(
+              arguments: Intent = Intent(),
+              savedInstanceState: Bundle? = null,
+              testCodeBlock: (Activity) -> ReturnValue
+          ): ReturnValue {
+              try {
+                  activity.intent = arguments
+                  if (savedInstanceState == null) {
+                      activityController.setup()
+                  } else {
+                      activityController.setup(savedInstanceState)
+                  }
+              } catch (ex: Exception) {
+                  throw AssertionError("Exception, test failed on activity creation with $ex\n${ex.stackTraceToString()}")
+              }
+      
+              return try {
+                  testCodeBlock(activity)
+              } catch (ex: Exception) {
+                  throw AssertionError("Exception. Test failed on activity execution with $ex\n${ex.stackTraceToString()}")
+              }
+          }
+      
+          /**
+           * Use this method to find views.
+           *
+           * The view existence will be assert before being returned
+           */
+          inline fun <reified T> Activity.findViewByString(idString: String): T {
+              val id = this.resources.getIdentifier(idString, "id", this.packageName)
+              val maybeView: View? = this.findViewById(id)
+      
+              val (expectedClass, maybeActualClass) =
+                  if(T::class.java.simpleName == maybeView?.javaClass?.simpleName) {
+                      T::class.java.canonicalName to maybeView?.javaClass?.canonicalName
+                  } else {
+                      T::class.java.simpleName to maybeView?.javaClass?.simpleName
+                  }
+              val idNotFoundMessage = "View with id \"$idString\" was not found"
+              val wrongClassMessage = "View with id \"$idString\" is not from expected class. " +
+                      "Expected $expectedClass found $maybeActualClass"
+      
+              assertNotNull(idNotFoundMessage, maybeView)
+              assertTrue(wrongClassMessage, maybeView is T)
+      
+              return maybeView as T
+          }
+      
+          /**
+           * Use this method to find views.
+           *
+           * The view existence will be assert before being returned
+           */
+          inline fun <reified T> View.findViewByString(idString: String): T {
+              val id = this.resources.getIdentifier(idString, "id", context.packageName)
+              val maybeView: View? = this.findViewById(id)
+      
+              val (expectedClass, maybeActualClass) =
+                  if(T::class.java.simpleName == maybeView?.javaClass?.simpleName) {
+                      T::class.java.canonicalName to maybeView?.javaClass?.canonicalName
+                  } else {
+                      T::class.java.simpleName to maybeView?.javaClass?.simpleName
+                  }
+              val idNotFoundMessage = "View with id \"$idString\" was not found"
+              val wrongClassMessage = "View with id \"$idString\" is not from expected class. " +
+                      "Expected $expectedClass found $maybeActualClass"
+      
+              assertNotNull(idNotFoundMessage, maybeView)
+              assertTrue(wrongClassMessage, maybeView is T)
+      
+              return maybeView as T
+          }
+      
+          /**
+           * Use this method to find views.
+           *
+           * The view existence will be assert before being returned
+           */
+          inline fun <reified T> Dialog.findViewByString(idString: String): T {
+              val id = this.context.resources.getIdentifier(idString, "id", context.packageName)
+              val maybeView: View? = this.findViewById(id)
+      
+              val (expectedClass, maybeActualClass) =
+                  if(T::class.java.simpleName == maybeView?.javaClass?.simpleName) {
+                      T::class.java.canonicalName to maybeView?.javaClass?.canonicalName
+                  } else {
+                      T::class.java.simpleName to maybeView?.javaClass?.simpleName
+                  }
+              val idNotFoundMessage = "View with id \"$idString\" was not found"
+              val wrongClassMessage = "View with id \"$idString\" is not from expected class. " +
+                      "Expected $expectedClass found $maybeActualClass"
+      
+              assertNotNull(idNotFoundMessage, maybeView)
+              assertTrue(wrongClassMessage, maybeView is T)
+      
+              return maybeView as T
+          }
+      
+          /**
+           * Use this method to perform clicks. It will also advance the clock millis milliseconds and run
+           * enqueued Runnable scheduled to run on main looper in that timeframe.
+           * Default value for millis is 500
+           *
+           * Internally it calls performClick() and shadowLooper.idleFor(millis)
+           */
+          fun View.clickAndRun(millis: Long = 500){
+              this.performClick()
+              shadowLooper.idleFor(Duration.ofMillis(millis))
+          }
+      
+          /**
+           * Asserts that the last message toasted is the expectedMessage.
+           * Assertion fails if no toast is shown with null actualLastMessage value.
+           */
+          fun assertLastToastMessageEquals(errorMessage: String, expectedMessage: String,) {
+              val actualLastMessage: String? = ShadowToast.getTextOfLatestToast()
+              assertEquals(errorMessage, expectedMessage, actualLastMessage)
+          }
+      
+          /**
+           * Use this method to retrieve the latest AlertDialog.
+           *
+           * The existence of such AlertDialog will be asserted before returning.
+           *
+           * Robolectric only supports android.app.AlertDialog, test will not be
+           * able to find androidx.appcompat.app.AlertDialog.
+           *
+           * - Important!!! :
+           * When writing stage description state explicitly the correct version that should be imported
+           */
+          fun getLatestDialog(): AlertDialog {
+              val latestAlertDialog = ShadowAlertDialog.getLatestAlertDialog()
+      
+              assertNotNull(
+                  "There was no AlertDialog found. Make sure to import android.app.AlertDialog version",
+                  latestAlertDialog
+              )
+      
+              return latestAlertDialog!!
+          }
+      
+          /**
+           *  Makes assertions on the contents of the RecyclerView.
+           *
+           *  Asserts that the size matches the size of fakeResultList and then
+           *  calls action for each item of the list with the itemViewSupplier
+           *  so that it is possible to make assertions on that itemView.
+           *
+           *  Take attention to refresh references to views coming from itemView since RecyclerView
+           *  can change the instance of View for a determinate list item after an update of the list
+           *  (ex: calling notifyItemChanged and similar methods).
+           */
+          fun <T> RecyclerView.assertListItems(
+              fakeResultList: List<T>,
+              caseDescription: String = "",
+              action: (itemViewSupplier: () -> View, position: Int, item: T) -> Unit
+          ) : Unit {
+      
+              assertNotNull("Your recycler view adapter should not be null", this.adapter)
+      
+              val expectedSize = fakeResultList.size
+      
+              val actualSize = this.adapter!!.itemCount
+              assertEquals("Incorrect number of list items", expectedSize, actualSize)
+      
+              if(expectedSize == 0) {
+                  return
+              } else if(expectedSize > 0) {
+                  val maxItemWidth = (0 until expectedSize)
+                      .asSequence()
+                      .mapNotNull { this.findViewHolderForAdapterPosition(it)?.itemView?.width }
+                      .maxOrNull()
+                      ?: throw AssertionError("$caseDescription No item is being displayed on RecyclerView, is it big enough to display one item?")
+                  val listWidth = maxItemWidth * (expectedSize + 1)
+      
+                  val maxItemHeight = (0 until actualSize)
+                      .asSequence()
+                      .mapNotNull { this.findViewHolderForAdapterPosition(it)?.itemView?.height }
+                      .maxOrNull()
+                      ?: throw AssertionError("$caseDescription No item is being displayed on RecyclerView, is it big enough to display one item?")
+                  val listHeight = maxItemHeight * (actualSize + 1)
+                  this.layout(0,0, listHeight, listWidth)  // may increase clock time
+      
+                  for((i, song) in fakeResultList.withIndex()) {
+      
+                      val itemViewSupplier = {
+                          this.layout(0,0, listHeight, listWidth)  // may increase clock time
+                          scrollToPosition(i)
+                          shadowLooper.idleFor(500, TimeUnit.MILLISECONDS)
+                          findViewHolderForAdapterPosition(i)?.itemView
+                              ?: throw AssertionError("$caseDescription Could not find list item with index $i")
+                      }
+                      action(itemViewSupplier, i, song)
+                  }
+      
+              } else {
+                  throw IllegalStateException("size assertion was not effective")
+              }
+          }
+      
+      
+          /**
+           * Use this class to get a testing database.
+           *
+           * example use-cases:
+           * TestDatabaseFactory().writableDatabase.use {...}, for setting up a state before launching
+           * the activity to test restoring of existing data by this activity.
+           *
+           * TestDatabaseFactory().readableDatabase.use {...}, for testing if data is is being saved
+           *
+           */
+          inner class TestDatabaseFactory(
+              context: Context? = activity,
+              name: String? = "phrases.db",
+              factory: SQLiteDatabase.CursorFactory? = null,
+              version: Int = 1
+          ) : SQLiteOpenHelper(context, name, factory, version) {
+              var onCreateCalled = false
+              var onUpgradeCalled = false
+              var onOpenCalled = false
+      
+              override fun onCreate(database: SQLiteDatabase) {
+                  onCreateCalled = true
+              }
+      
+              override fun onUpgrade(database: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
+                  onUpgradeCalled = true
+              }
+      
+              override fun onOpen(database: SQLiteDatabase) {
+                  onOpenCalled = true
+              }
+      
+              @Synchronized
+              override fun close() {
+                  onCreateCalled = false
+                  onUpgradeCalled = false
+                  onOpenCalled = false
+                  super.close()
+              }
+          }
+      
+          /**
+           *  Makes assertions on the contents of one item of the RecyclerView.
+           *
+           *  Asserts that the the size of the list is at least itemIndex + 1.
+           *
+           *  Calls action with the itemViewSupplier so that it is possible to make assertions on that itemView.
+           *  Take attention to refresh references to views coming from itemView since RecyclerView
+           *  can change the instance of View for a determinate list item after an update to the list.
+           */
+          fun RecyclerView.assertSingleListItem(
+              itemIndex: Int,
+              caseDescription: String = "",
+              action: (itemViewSupplier: () -> View) -> Unit) {
+      
+              assertNotNull("Your recycler view adapter should not be null", this.adapter)
+      
+              val expectedMinSize = itemIndex + 1
+      
+              val actualSize = this.adapter!!.itemCount
+              assertTrue(
+                  "RecyclerView was expected to contain item with index $itemIndex, but its size was $actualSize",
+                  actualSize >= expectedMinSize
+              )
+      
+              if(actualSize >= expectedMinSize) {
+                  val maxItemWidth = (0 until actualSize)
+                      .asSequence()
+                      .mapNotNull { this.findViewHolderForAdapterPosition(it)?.itemView?.width }
+                      .maxOrNull()
+                      ?: throw AssertionError("$caseDescription No item is being displayed on RecyclerView, is it big enough to display one item?")
+                  val listWidth = maxItemWidth * (actualSize + 1)
+      
+                  val maxItemHeight = (0 until actualSize)
+                      .asSequence()
+                      .mapNotNull { this.findViewHolderForAdapterPosition(it)?.itemView?.height }
+                      .maxOrNull()
+                      ?: throw AssertionError("$caseDescription No item is being displayed on RecyclerView, is it big enough to display one item?")
+                  val listHeight = maxItemHeight * (actualSize + 1)
+                  this.layout(0,0, listHeight, listWidth)  // may increase clock time
+      
+                  val itemViewSupplier = {
+                      this.layout(0, 0, listWidth, listHeight)  // may increase clock time
+                      this.scrollToPosition(itemIndex)
+                      shadowLooper.idleFor(500, TimeUnit.MILLISECONDS)
+                      val itemView = (this.findViewHolderForAdapterPosition(itemIndex)?.itemView
+                          ?: throw AssertionError("$caseDescription Could not find list item with index $itemIndex"))
+                      itemView
+                  }
+      
+                  action(itemViewSupplier)
+      
+              } else {
+                  throw IllegalStateException("size assertion was not effective")
+              }
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/phrases/internals/CustomAsyncDifferConfigShadow.java
+    visible: false
+    text: |
+      package org.hyperskill.phrases.internals;
+      
+      import static org.robolectric.Shadows.shadowOf;
+      
+      import android.os.Handler;
+      import android.os.Looper;
+      
+      import androidx.recyclerview.widget.AsyncDifferConfig;
+      
+      import org.robolectric.annotation.Implementation;
+      import org.robolectric.annotation.Implements;
+      import org.robolectric.shadows.ShadowLooper;
+      
+      import java.util.concurrent.Executor;
+      import java.util.concurrent.TimeUnit;
+      
+      // version 1.2
+      @Implements(AsyncDifferConfig.class)
+      public class CustomAsyncDifferConfigShadow {
+      
+          public static class MainThreadExecutor implements Executor {
+              private final Handler handler = new Handler(Looper.getMainLooper());
+              private final ShadowLooper shadowLooper = shadowOf(Looper.getMainLooper());
+      
+              @Override
+              public void execute(Runnable r) {
+                  handler.post(r);
+                  shadowLooper.idleFor(500, TimeUnit.MILLISECONDS);
+              }
+          }
+          Executor mainExecutor;
+      
+          @Implementation
+          public Executor getBackgroundThreadExecutor() {
+              if(mainExecutor == null) {
+                  mainExecutor = new MainThreadExecutor();
+              }
+              return mainExecutor;
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/phrases/internals/PhrasesUnitTest.kt
+    visible: false
+    text: |
+      package org.hyperskill.phrases.internals
+      
+      import android.app.*
+      import android.app.AlarmManager.OnAlarmListener
+      import android.content.ContentValues
+      import android.content.Context
+      import android.database.sqlite.SQLiteException
+      import android.os.Handler
+      import android.os.SystemClock
+      import android.widget.EditText
+      import android.widget.TextView
+      import androidx.core.content.getSystemService
+      import androidx.recyclerview.widget.RecyclerView
+      import com.google.android.material.floatingactionbutton.FloatingActionButton
+      import org.junit.Assert.*
+      import org.robolectric.Shadows.shadowOf
+      import org.robolectric.shadows.ShadowAlarmManager
+      import org.robolectric.shadows.ShadowAlarmManager.ScheduledAlarm
+      import org.robolectric.shadows.ShadowDialog
+      import org.robolectric.shadows.ShadowNotificationManager
+      import java.util.*
+      import java.util.concurrent.TimeUnit
+      
+      // version 1.2
+      open class PhrasesUnitTest<T : Activity>(clazz: Class<T>): AbstractUnitTest<T>(clazz) {
+      
+          @Suppress("UNUSED")
+          companion object {
+              const val CHANNEL_ID = "org.hyperskill.phrases"
+              const val NOTIFICATION_ID = 393939
+              val fakePhrases = listOf("This is a test phrase", "This is another test phrase", "Yet another test phrase")
+      
+              const val messagePhraseNotInDatabase: String =
+                  "The phrase in the notification is not equal to any phase in database."
+              const val messageWrongDatabaseContent: String =
+                  "Make sure to load messages from database"
+              const val messageNotificationWithIdNotFound =
+                  "Could not find notification with id 393939. Did you set the proper id?"
+          }
+      
+          protected val reminderTv: TextView by lazy {
+              val view = activity.findViewByString<TextView>("reminderTextView")
+              val messageInitialText = "The reminderTextView has a wrong initial text"
+              val expectedInitialText = "No reminder set"
+              val actualInitialText = view.text.toString()
+              assertEquals(messageInitialText, expectedInitialText, actualInitialText)
+      
+              view
+          }
+      
+          protected val recyclerView : RecyclerView by lazy {
+              activity.findViewByString("recyclerView")
+          }
+      
+          protected val floatingButton: FloatingActionButton by lazy {
+              activity.findViewByString("addButton")
+          }
+      
+          protected val notificationManager: ShadowNotificationManager by lazy {
+              shadowOf(
+                  activity.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+              )
+          }
+      
+          protected fun RecyclerView.assertItemViewsExistOnItemWithIndex(index: Int = 0) {
+              this.assertSingleListItem(index) { itemViewSupplier ->
+                  val itemView = itemViewSupplier()
+                  itemView.findViewByString<TextView>("phraseTextView")
+              }
+          }
+      
+          protected fun RecyclerView.assertAmountItems(expectedAmount: Int) {
+              val actualInitialItems = this.adapter?.itemCount
+                  ?: throw AssertionError("Could not find any RecyclerView.Adapter on recyclerView")
+              val messageInitialText = "The recyclerView doesn't have 3 or more items. Found $actualInitialItems items."
+              assertTrue(messageInitialText, (actualInitialItems >= expectedAmount))
+          }
+      
+          protected fun RecyclerView.deleteLastItemAndAssertSizeDecreased() {
+              val adapter = this.adapter ?: throw AssertionError("Could not find any RecyclerView.Adapter on recyclerView")
+              val beforeDeleteSize = adapter.itemCount
+              val lastIndex = beforeDeleteSize - 1
+      
+              deletePhraseAtIndex(lastIndex)
+      
+              val expectedSizeAfterDelete = beforeDeleteSize - 1
+              val actualSizeAfterDelete = adapter.itemCount
+      
+              assertEquals(
+                  "The recyclerView didn't remove item after clicking 'Delete'.",
+                  expectedSizeAfterDelete,
+                  actualSizeAfterDelete
+              )
+          }
+      
+          protected val notificationChannel: NotificationChannel by lazy {
+              val notificationChannel =
+                  notificationManager.notificationChannels.mapNotNull {
+                      it as NotificationChannel?
+                  }.firstOrNull {
+                      it.id == CHANNEL_ID
+                  }
+      
+              assertNotNull("Couldn't find notification channel with ID \"$CHANNEL_ID\"", notificationChannel)
+              notificationChannel!!
+          }
+      
+          protected fun getLatestTimePickerDialog(notFoundMessage: String = "No TimePickerDialog was found"): TimePickerDialog {
+              return ShadowDialog.getShownDialogs().mapNotNull {
+                  if(it is TimePickerDialog) it else null
+              }.lastOrNull() ?: throw AssertionError(notFoundMessage)
+          }
+      
+          protected fun TimePickerDialog.pickTime(hourOfDay: Int, minuteOfHour: Int, advanceClockMillis: Long = 500) {
+              val shadowTimePickerDialog = shadowOf(this)
+      
+              this.updateTime(hourOfDay, minuteOfHour)
+              shadowTimePickerDialog.clickOn(android.R.id.button1) // ok button
+              shadowLooper.idleFor(advanceClockMillis, TimeUnit.MILLISECONDS)
+          }
+      
+          fun runEnqueuedAlarms() {
+              val alarmManager = activity.getSystemService<AlarmManager>()
+              val shadowAlarmManager: ShadowAlarmManager = shadowOf(alarmManager)
+              val toTrigger = shadowAlarmManager.scheduledAlarms.filter {
+                  it.triggerAtTime < SystemClock.currentGnssTimeClock().millis()
+              }
+              toTrigger.forEach { alarm ->
+                  // trigger alarm
+                  if(alarm.operation != null) {
+                      val pendingIntent = shadowOf(alarm.operation)
+                      if(alarm.triggerAtTime < SystemClock.currentGnssTimeClock().millis()) {
+                          alarm.operation.intentSender.sendIntent(
+                              pendingIntent.savedContext,
+                              pendingIntent.requestCode,
+                              pendingIntent.savedIntent,
+                              null,
+                              Handler(activity.mainLooper)
+                          )
+                          shadowLooper.idleFor(500, TimeUnit.MILLISECONDS)
+                      }
+                  } else if(alarm.onAlarmListener != null) {
+                      if(alarm.triggerAtTime < SystemClock.currentGnssTimeClock().millis()) {
+                          alarm.onAlarmListener.onAlarm()
+                      }
+                  }
+      
+                  shadowAlarmManager.scheduledAlarms.remove(alarm) // remove triggered
+                  if(alarm.interval > 0) {
+                      // if repeating schedule next
+                      val nextAlarm = alarm.copy(triggerAtTime = alarm.triggerAtTime + alarm.interval)
+                      shadowAlarmManager.scheduledAlarms.add(nextAlarm)
+                  }
+              }
+          }
+      
+          private fun ScheduledAlarm.copy(
+              type: Int = this.type,
+              triggerAtTime: Long = this.triggerAtTime,
+              interval: Long = this.interval,
+              operation: PendingIntent? = this.operation,
+              showIntent: PendingIntent? = this.showIntent,
+              onAlarmListener: OnAlarmListener? = this.onAlarmListener,
+              handler: Handler? = this.handler
+          ): ScheduledAlarm {
+              val alarmConstructor = ScheduledAlarm::class.java.getDeclaredConstructor(
+                  Int::class.java,
+                  Long::class.java,
+                  Long::class.java,
+                  PendingIntent::class.java,
+                  PendingIntent::class.java,
+                  OnAlarmListener::class.java,
+                  Handler::class.java
+              )
+              alarmConstructor.isAccessible = true
+              return alarmConstructor.newInstance(
+                  type,
+                  triggerAtTime,
+                  interval,
+                  operation,
+                  showIntent,
+                  onAlarmListener,
+                  handler
+              )
+          }
+      
+          protected fun addToDatabase(phrases: List<String>) {
+      
+              TestDatabaseFactory().writableDatabase.use { database ->
+                  database.execSQL("CREATE TABLE IF NOT EXISTS phrases (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, phrase TEXT NOT NULL)")
+                  database.beginTransaction()
+                  try {
+                      phrases.forEach {
+                          ContentValues().apply {
+                              put("phrase", it)
+                              database.insert("phrases", null, this)
+                          }
+                      }
+                      database.setTransactionSuccessful()
+                  } catch (ex: SQLiteException) {
+                      ex.printStackTrace()
+                      fail(ex.stackTraceToString())
+                  } catch (ex: IllegalStateException) {
+                      ex.printStackTrace()
+                      fail(ex.stackTraceToString())
+                  } finally {
+                      database.endTransaction()
+                  }
+              }
+          }
+      
+          protected fun readAllFromDatabase(): List<String> {
+      
+              val phrasesFromDb = mutableListOf<String>()
+      
+              TestDatabaseFactory().readableDatabase.use { database ->
+                  database.query("phrases", null,
+                      null, null, null, null, null).use { cursor ->
+      
+                      val phraseColumnIndex = cursor.getColumnIndex("phrase")
+                      assertTrue("phrase column was not found", phraseColumnIndex >= 0)
+      
+                      while(cursor.moveToNext()) {
+                          val phrase = cursor.getString(phraseColumnIndex)
+                          phrasesFromDb.add(phrase)
+                      }
+                  }
+              }
+      
+              return phrasesFromDb
+          }
+      
+          protected fun addPhrase(phrase: String) {
+              floatingButton.clickAndRun()
+              val dialog = ShadowDialog.getLatestDialog()
+              val shadowDialog = shadowOf(dialog)
+              assertNotNull("Are you sure you are showing a dialog when the floating button is clicked?", dialog)
+      
+              val editText = dialog.findViewByString<EditText>("editText")
+      
+              editText.setText(phrase)
+              shadowDialog.clickOn(android.R.id.button1) // ok button
+              shadowLooper.idleFor(500, TimeUnit.MILLISECONDS)
+          }
+      
+          protected fun assertDatabaseContentMatchesList(messageWrongDatabaseContent: String, expectedDatabaseContent: List<String>) {
+              val phrasesOnDatabase = readAllFromDatabase()
+      
+              assertEquals(messageWrongDatabaseContent,
+                  expectedDatabaseContent,
+                  phrasesOnDatabase
+              )
+      
+              recyclerView.assertListItems(expectedDatabaseContent) { itemViewSupplier, index, phrase ->
+                  val itemView = itemViewSupplier()
+                  val phraseTextView = itemView.findViewByString<TextView>("phraseTextView")
+                  val actualPhrase = phraseTextView.text.toString()
+      
+                  assertEquals(
+                      "The recyclerView is not matching database content",
+                      phrase,
+                      actualPhrase
+                  )
+              }
+          }
+      
+          protected fun deletePhraseAtIndex(index: Int) {
+              recyclerView.assertSingleListItem(index) { itemViewSupplier ->
+                  val itemView = itemViewSupplier()
+                  val deleteTextView = itemView.findViewByString<TextView>("deleteTextView")
+                  deleteTextView.clickAndRun()
+              }
+          }
+      
+          protected fun hourToMinutes(minutesFromNow: Int): Pair<Int, Int> {
+              val calendar = Calendar.getInstance()
+              calendar.add(Calendar.MINUTE, minutesFromNow)
+              val hour = calendar.get(Calendar.HOUR_OF_DAY)
+              val minute = calendar.get(Calendar.MINUTE)
+              return hour to minute
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/phrases/Stage2BUnitTest.kt
+    visible: false
+    text: |-
+      package org.hyperskill.phrases
+      
+      import org.hyperskill.phrases.internals.CustomAsyncDifferConfigShadow
+      import org.hyperskill.phrases.internals.PhrasesUnitTest
+      import org.junit.FixMethodOrder
+      import org.junit.Ignore
+      import org.junit.Test
+      import org.junit.runner.RunWith
+      import org.junit.runners.MethodSorters
+      import org.robolectric.RobolectricTestRunner
+      import org.robolectric.annotation.Config
+      
+      // version 1.2
+      @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+      @RunWith(RobolectricTestRunner::class)
+      @Config(shadows = [CustomAsyncDifferConfigShadow::class])
+      class Stage2BUnitTest : PhrasesUnitTest<MainActivity>(MainActivity::class.java){
+      
+          @Test
+          fun test00_checkReminderTextViewExists() {
+              testActivity {
+                  reminderTv
+              }
+          }
+      
+          @Test
+          fun test01_checkFloatingButtonExists() {
+              testActivity {
+                  floatingButton
+              }
+          }
+      
+          @Test
+          fun test02_checkRecyclerViewExists() {
+              testActivity {
+                  recyclerView
+              }
+          }
+      
+          @Test @Ignore("incompatible with stage4 requirements")
+          fun test03_checkFirstListItemContainExpectedViews() {
+              testActivity {
+                  recyclerView.assertItemViewsExistOnItemWithIndex(0)
+              }
+          }
+      
+          @Test @Ignore("incompatible with stage4 requirements")
+          fun test04_checkRecyclerViewHasAtLeastThreeItems() {
+              testActivity {
+                  recyclerView.assertAmountItems(3)
+              }
+          }
+      
+          @Test @Ignore("incompatible with stage4 requirements")
+          fun test05_checkClickingDeleteDecreasesNumberOfItems() {
+              testActivity {
+                  recyclerView.deleteLastItemAndAssertSizeDecreased()
+              }
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/phrases/Stage3UnitTest.kt
+    visible: false
+    text: |-
+      package org.hyperskill.phrases
+      
+      import android.app.Notification
+      import android.app.Notification.EXTRA_TEXT
+      import android.app.Notification.EXTRA_TITLE
+      import android.os.SystemClock
+      import org.hyperskill.phrases.internals.CustomAsyncDifferConfigShadow
+      import org.hyperskill.phrases.internals.PhrasesUnitTest
+      import org.junit.Assert.*
+      import org.junit.Before
+      import org.junit.FixMethodOrder
+      import org.junit.Test
+      import org.junit.runner.RunWith
+      import org.junit.runners.MethodSorters
+      import org.robolectric.RobolectricTestRunner
+      import org.robolectric.annotation.Config
+      import java.util.concurrent.TimeUnit
+      
+      // version 1.2
+      @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+      @RunWith(RobolectricTestRunner::class)
+      @Config(shadows = [CustomAsyncDifferConfigShadow::class])
+      class Stage3UnitTest : PhrasesUnitTest<MainActivity>(MainActivity::class.java){
+      
+      
+          @Before
+          fun setUp() {
+              SystemClock.setCurrentTimeMillis(System.currentTimeMillis())
+              run { // compatibility with stage4
+                  val phrases = listOf("database should not be empty to set reminder")
+                  addToDatabase(phrases)
+              }
+          }
+      
+          @Test
+          fun test00_checkNotificationChannelExists() {
+              testActivity {
+                  notificationChannel
+              }
+          }
+      
+          @Test
+          fun test01_checkTimePickerDialog() {
+              testActivity {
+                  reminderTv.clickAndRun()
+                  val timePickerDialog = getLatestTimePickerDialog()
+                  timePickerDialog.pickTime(10, 15)
+      
+                  val expectedTimeText = "Reminder set for 10:15"
+                  val actualTimeText = reminderTv.text.toString()
+      
+                  assertEquals("The reminderTextView has a wrong text", expectedTimeText, actualTimeText)
+              }
+          }
+      
+          @Test
+          fun test02_checkTimeFormatting() {
+      
+      
+              testActivity {
+                  val testCases = listOf(
+                      0 to 0,
+                      2 to 22,
+                      12 to 6,
+                      17 to 25,
+                      23 to 59
+                  )
+      
+                  val expectedTime = listOf(
+                      "00:00",
+                      "02:22",
+                      "12:06",
+                      "17:25",
+                      "23:59"
+                  )
+      
+                  testCases.forEachIndexed { i, (pickHour, pickMinute)  ->
+                      reminderTv.clickAndRun()
+                      val timePickerDialog = getLatestTimePickerDialog()
+      
+                      timePickerDialog.pickTime(pickHour, pickMinute)
+                      val timeText = expectedTime[i]
+      
+                      val expectedText = "Reminder set for $timeText"
+                      val actualText = reminderTv.text.toString()
+                      assertEquals("Time is not formatted correctly", expectedText, actualText)
+                  }
+              }
+          }
+      
+          @Test
+          fun test03_checkNotificationIsSent() {
+              testActivity {
+                  val minutesToAdd = 10
+                  val (pickHour, pickMinute) = hourToMinutes(minutesFromNow = minutesToAdd)
+      
+                  reminderTv.clickAndRun()
+                  val timePickerDialog = getLatestTimePickerDialog()
+                  timePickerDialog.pickTime(pickHour, pickMinute)
+      
+                  runEnqueuedAlarms()
+                  val beforeTimeNotification: Notification? = notificationManager.getNotification(NOTIFICATION_ID)
+                  assertNull("Notification should not be sent before the time set", beforeTimeNotification)
+      
+                  shadowLooper.idleFor(minutesToAdd + 2L, TimeUnit.MINUTES) // trigger alarm
+                  runEnqueuedAlarms()
+      
+                  val notification: Notification? = notificationManager.getNotification(NOTIFICATION_ID)
+                  assertNotNull(messageNotificationWithIdNotFound, notification)
+                  notification!!
+      
+                  val messageChannelId = "The notification channel id does not equals \"$CHANNEL_ID\""
+                  val actualChannelId = notification.channelId
+                  assertEquals(messageChannelId, CHANNEL_ID, actualChannelId)
+      
+                  val messageTitle = "Have you set correct notification title?"
+                  val expectedTitle = "Your phrase of the day"
+                  val actualTitle = notification.extras.getCharSequence(EXTRA_TITLE)?.toString()
+                  assertEquals(messageTitle, expectedTitle, actualTitle)
+      
+                  val messageContent = "Have you set the notification content?"
+                  val actualContent = notification.extras.getCharSequence(EXTRA_TEXT)?.toString()
+                  assertNotNull(messageContent, actualContent)
+                  assertTrue(messageContent, actualContent!!.isNotBlank())
+              }
+          }
+      
+          @Test
+          fun test04_checkWhenTimeSetIsBeforeCurrentNotificationIsSentNextDay() {
+              testActivity {
+                  val minutesToSubtract = 10
+                  val (pickHour, pickMinute) = hourToMinutes(minutesFromNow = -minutesToSubtract)
+      
+                  reminderTv.clickAndRun()
+                  val timePickerDialog = getLatestTimePickerDialog()
+                  timePickerDialog.pickTime(pickHour, pickMinute)
+      
+                  runEnqueuedAlarms()
+                  val beforeTimeNotification: Notification? = notificationManager.getNotification(NOTIFICATION_ID)
+                  val messageNotificationShouldBeNull =
+                      "If the notification is set to a time before the current day time " +
+                              "send the notification only next day"
+                  assertNull(messageNotificationShouldBeNull, beforeTimeNotification)
+      
+      
+                  shadowLooper.idleFor(1, TimeUnit.DAYS) // trigger alarm
+                  runEnqueuedAlarms()
+      
+                  val notification: Notification? = notificationManager.getNotification(NOTIFICATION_ID)
+                  assertNotNull(messageNotificationWithIdNotFound, notification)
+                  notification!!
+      
+                  val messageChannelId = "The notification channel id does not equals \"$CHANNEL_ID\""
+                  val actualChannelId = notification.channelId
+                  assertEquals(messageChannelId, CHANNEL_ID, actualChannelId)
+      
+                  val messageTitle = "Have you set correct notification title?"
+                  val expectedTitle = "Your phrase of the day"
+                  val actualTitle = notification.extras.getCharSequence(EXTRA_TITLE)?.toString()
+                  assertEquals(messageTitle, expectedTitle, actualTitle)
+      
+                  val messageContent = "Have you set the notification content?"
+                  val actualContent = notification.extras.getCharSequence(EXTRA_TEXT)?.toString()
+                  assertNotNull(messageContent, actualContent)
+                  assertTrue(messageContent, actualContent!!.isNotBlank())
+              }
+          }
+      
+          @Test
+          fun test05_checkNotificationIsRepeating() {
+      
+              testActivity {
+                  val minutesToAdd = 10
+                  val (pickHour, pickMinute) = hourToMinutes(minutesFromNow = minutesToAdd)
+      
+                  reminderTv.clickAndRun()
+                  val timePickerDialog = getLatestTimePickerDialog()
+                  timePickerDialog.pickTime(pickHour, pickMinute)
+      
+                  shadowLooper.idleFor(minutesToAdd + 2L, TimeUnit.MINUTES) // trigger alarm
+                  runEnqueuedAlarms()
+      
+                  val notification: Notification? = notificationManager.getNotification(NOTIFICATION_ID)
+                  assertNotNull(messageNotificationWithIdNotFound, notification)
+                  notification!!
+      
+                  shadowLooper.idleFor(1 , TimeUnit.DAYS)
+                  shadowLooper.idleFor(10, TimeUnit.MINUTES)  // trigger alarm on next day
+                  runEnqueuedAlarms()
+      
+                  val notification2: Notification? = notificationManager.getNotification(NOTIFICATION_ID)
+                  assertNotNull(messageNotificationWithIdNotFound, notification2)
+                  notification2!!
+      
+                  val messageSameNotificationError =
+                      "A new notification should be triggered on the next day"
+                  assertFalse(messageSameNotificationError, notification === notification2)
+              }
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/phrases/Stage4UnitTest.kt
+    visible: false
+    text: |-
+      package org.hyperskill.phrases
+      
+      import android.app.Dialog
+      import android.app.Notification
+      import android.os.SystemClock
+      import org.hyperskill.phrases.internals.CustomAsyncDifferConfigShadow
+      import org.hyperskill.phrases.internals.PhrasesUnitTest
+      import org.junit.Assert.*
+      import org.junit.Before
+      import org.junit.FixMethodOrder
+      import org.junit.Test
+      import org.junit.runner.RunWith
+      import org.junit.runners.MethodSorters
+      import org.robolectric.RobolectricTestRunner
+      import org.robolectric.annotation.Config
+      import org.robolectric.shadows.ShadowDialog
+      import org.robolectric.shadows.ShadowToast
+      import java.util.*
+      import java.util.concurrent.TimeUnit
+      
+      // version 1.2
+      @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+      @RunWith(RobolectricTestRunner::class)
+      @Config(shadows = [CustomAsyncDifferConfigShadow::class])
+      class Stage4UnitTest : PhrasesUnitTest<MainActivity>(MainActivity::class.java) {
+      
+      
+          @Before
+          fun setUp() {
+              SystemClock.setCurrentTimeMillis(System.currentTimeMillis())
+          }
+      
+      
+          @Test
+          fun test00_checkRecyclerViewIsUsingDatabase() {
+      
+              addToDatabase(fakePhrases)
+      
+              testActivity {
+                  assertDatabaseContentMatchesList(
+                      messageWrongDatabaseContent = messageWrongDatabaseContent,
+                      expectedDatabaseContent = fakePhrases
+                  )
+              }
+          }
+      
+          @Test
+          fun test01_checkRecyclerViewIsUsingDatabase2() {
+      
+              val phrases = fakePhrases + "one more test phrase"
+              addToDatabase(phrases)
+      
+              testActivity {
+                  assertDatabaseContentMatchesList(
+                      messageWrongDatabaseContent = messageWrongDatabaseContent,
+                      expectedDatabaseContent = phrases
+                  )
+              }
+          }
+      
+          @Test
+          fun test02_checkAddDialog() {
+              val phrases = listOf("A text for test")
+      
+              testActivity {
+                  addPhrase(phrases[0])
+      
+                  assertDatabaseContentMatchesList(
+                      messageWrongDatabaseContent = "Database content should contain added phrase",
+                      expectedDatabaseContent = phrases
+                  )
+              }
+          }
+      
+      
+      
+          @Test
+          fun test03_checkPhrasesAreDeleted() {
+      
+              addToDatabase(fakePhrases)
+      
+              testActivity {
+                  deletePhraseAtIndex(0)
+                  assertDatabaseContentMatchesList(
+                      messageWrongDatabaseContent = "After deleting database content should be updated",
+                      expectedDatabaseContent = fakePhrases.drop(1)
+                  )
+              }
+          }
+      
+          @Test
+          fun test04_checkNotificationContainsPhraseFromDb() {
+      
+              addToDatabase(fakePhrases)
+      
+              testActivity {
+                  val minutesToAdd = 10
+                  val (pickHour, pickMinute) = hourToMinutes(minutesFromNow = minutesToAdd)
+      
+                  reminderTv.clickAndRun()
+                  val timePickerDialog = getLatestTimePickerDialog()
+      
+                  timePickerDialog.pickTime(pickHour, pickMinute)
+                  shadowLooper.idleFor(minutesToAdd + 2L, TimeUnit.MINUTES) // trigger alarm
+      
+                  runEnqueuedAlarms()
+      
+                  val notification: Notification? = notificationManager.getNotification(NOTIFICATION_ID)
+      
+                  assertNotNull(messageNotificationWithIdNotFound, notification)
+                  notification!!
+      
+                  val messageContent = messagePhraseNotInDatabase
+                  val actualContent = notification.extras.getCharSequence(Notification.EXTRA_TEXT)?.toString()
+                  assertTrue(messageContent, actualContent in fakePhrases)
+              }
+          }
+      
+          @Test
+          fun test05_checkRemindersNotAllowedWithEmptyDatabase() {
+      
+              testActivity {
+                  reminderTv.clickAndRun()
+                  val maybeDialog: Dialog? = ShadowDialog.getLatestDialog()
+                  assertNull("No dialog should be shown if database is empty", maybeDialog)
+      
+                  val toast = ShadowToast.getLatestToast()
+                  assertNotNull("Toast is not shown after trying to set reminder with empty database", toast)
+      
+                  val expectedText = "No reminder set"
+                  val actualText = reminderTv.text.toString()
+                  assertEquals("Seems like reminder is still set with empty database", expectedText, actualText)
+              }
+          }
+      
+          @Test
+          fun test06_checkEmptyAfterDeleteUnsetsReminder() {
+      
+              val fakePhrases = listOf("single item")
+              addToDatabase(fakePhrases)
+      
+              testActivity {
+                  val minutesToAdd = 10
+                  val (pickHour, pickMinute) = hourToMinutes(minutesFromNow = minutesToAdd)
+      
+      
+                  reminderTv.clickAndRun()
+                  val timePickerDialog = getLatestTimePickerDialog()
+                  timePickerDialog.pickTime(pickHour, pickMinute)
+      
+                  val unexpectedTextReminders = "No reminder set"
+                  val actualTextReminders = reminderTv.text.toString()
+                  assertNotEquals(
+                      "If reminder is set reminderTv should change",
+                      unexpectedTextReminders,
+                      actualTextReminders
+                  )
+      
+                  deletePhraseAtIndex(0)
+      
+                  assertDatabaseContentMatchesList(
+                      messageWrongDatabaseContent = "Database should be empty after deleting its only element",
+                      expectedDatabaseContent = emptyList()
+                  )
+      
+                  val expectedTextNoReminders = "No reminder set"
+                  val actualTextNoReminders = reminderTv.text.toString()
+                  assertEquals(
+                      "If list becomes empty after deletion reminderTv should change",
+                      expectedTextNoReminders,
+                      actualTextNoReminders
+                  )
+      
+                  val messageNotificationId =
+                      "No notification should be triggered if the list is empty"
+      
+                  try{
+                      shadowLooper.idleFor(minutesToAdd + 2L, TimeUnit.MINUTES) // trigger alarm
+                      runEnqueuedAlarms()
+                      val notification: Notification? = notificationManager.getNotification(NOTIFICATION_ID)
+                      assertNull(messageNotificationId, notification)
+                  } catch (noSuchElementException : NoSuchElementException) {
+                      val exceptionThrownMessage = "Make sure you don't trigger alarm if the list is empty. " +
+                              "$noSuchElementException"
+                      throw AssertionError(exceptionThrownMessage, noSuchElementException)
+                  }
+              }
+          }
+      
+          @Test
+          fun test07_checkNotificationSentOnNextDay() {
+              addToDatabase(fakePhrases)
+      
+              testActivity {
+                  val minutesToAdd = 10
+                  val (pickHour, pickMinute) = hourToMinutes(minutesFromNow = minutesToAdd)
+      
+                  reminderTv.clickAndRun()
+                  val timePickerDialog = getLatestTimePickerDialog()
+      
+                  timePickerDialog.pickTime(pickHour, pickMinute)
+                  shadowLooper.idleFor(minutesToAdd + 2L, TimeUnit.MINUTES) // trigger alarm
+                  runEnqueuedAlarms()
+      
+                  val notification: Notification? = notificationManager.getNotification(NOTIFICATION_ID)
+      
+                  assertNotNull(messageNotificationWithIdNotFound, notification)
+                  notification!!
+      
+                  val messageContent = messagePhraseNotInDatabase
+                  val actualContent = notification.extras.getCharSequence(Notification.EXTRA_TEXT)?.toString()
+                  assertTrue(messageContent, actualContent in fakePhrases)
+      
+                  shadowLooper.idleFor(1 , TimeUnit.DAYS)
+                  shadowLooper.idleFor(10, TimeUnit.MINUTES)  // trigger alarm on next day
+                  runEnqueuedAlarms()
+      
+                  val notification2: Notification? = notificationManager.getNotification(NOTIFICATION_ID)
+                  assertNotNull(messageNotificationWithIdNotFound, notification2)
+                  notification2!!
+      
+                  val messageSameNotificationError =
+                      "A new notification should be triggered on the next day"
+                  assertFalse(messageSameNotificationError, notification === notification2)
+      
+                  val actualContent2 =
+                      notification2.extras.getCharSequence(Notification.EXTRA_TEXT)?.toString()
+                  assertTrue(messagePhraseNotInDatabase, actualContent2 in fakePhrases)
+              }
+          }
+      }
+    learner_created: false
+  - name: build.gradle
+    visible: false
+    text: |-
+      apply plugin: 'com.android.application'
+      apply plugin: 'kotlin-android'
+      apply plugin: 'kotlin-kapt'
+      
+      android {
+          compileSdkVersion hs.android.compileSdkVersion
+      
+          defaultConfig {
+      
+              applicationId "org.hyperskill.phrases"
+              minSdkVersion hs.android.minSdkVersion
+              targetSdkVersion hs.android.targetSdkVersion
+              versionCode 1
+              versionName '1.0'
+              kapt {
+                  arguments {
+                      arg("room.schemaLocation", "$projectDir/schemas")
+                  }
+              }
+          }
+      
+          buildFeatures {
+              viewBinding true
+          }
+      }
+      
+      dependencies {
+          def kotlinVersion = hs.android.kotlinVersion
+          implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+      
+          def coreKtx = hs.android.lib.coreKtx
+          implementation "androidx.core:core-ktx:$coreKtx"
+      
+          def appCompat = hs.android.lib.appCompat
+          implementation "androidx.appcompat:appcompat:$appCompat"
+      
+          def constraintLayout = hs.android.lib.constraintLayout
+          implementation "androidx.constraintlayout:constraintlayout:$constraintLayout"
+      
+          def material = hs.android.lib.material
+          implementation "com.google.android.material:material:$material"
+      
+          def roomVersion = '2.3.0'
+          kapt "androidx.room:room-compiler:$roomVersion"
+          implementation "androidx.room:room-ktx:$roomVersion"
+          implementation "androidx.room:room-runtime:$roomVersion"
+      
+          def lifecycleVersion = '2.2.0'
+          implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
+          implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+      
+      }
+    learner_created: false
+  - name: src/main/res/layout/items.xml
+    visible: true
+    text: |-
+      <?xml version="1.0" encoding="utf-8"?>
+      <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp">
+      
+          <TextView
+              android:id="@+id/phraseTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentStart="true"
+              android:layout_alignParentTop="true"
+              android:layout_centerInParent="true"
+              android:layout_toStartOf="@+id/deleteTextView"
+              android:gravity="center_vertical"
+              android:text="A test phrase"
+              android:textSize="26dp" />
+      
+          <TextView
+              android:id="@+id/deleteTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/divider"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentEnd="true"
+              android:layout_centerInParent="true"
+              android:gravity="center_vertical"
+              android:text="Delete" />
+      
+          <View
+              android:id="@+id/divider"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginTop="10dp"
+              android:layout_below="@id/phraseTextView"
+              android:background="?android:attr/listDivider" />
+      
+      </RelativeLayout>
+    learner_created: true
+  - name: src/main/java/org/hyperskill/phrases/AlarmReceiver.kt
+    visible: true
+    text: |-
+      package org.hyperskill.phrases
+      
+      import android.app.NotificationManager
+      import android.app.PendingIntent
+      import android.content.BroadcastReceiver
+      import android.content.Context
+      import android.content.Intent
+      import android.util.Log
+      import androidx.core.app.NotificationCompat
+      
+      class AlarmReceiver : BroadcastReceiver() {
+      
+          override fun onReceive(context: Context, intent: Intent) {
+              val pIntent = PendingIntent.getActivity(context, 1, intent, 0)
+              val notificationBuilder = NotificationCompat.Builder(context, CHANNEL_ID)
+                  .setSmallIcon(R.drawable.ic_launcher_foreground)
+                  .setContentTitle("Your phrase of the day")
+                  .setContentText(intent.getStringExtra("note"))
+                  .setStyle(NotificationCompat.BigTextStyle())
+                  .setPriority(NotificationCompat.PRIORITY_HIGH)
+                  .setAutoCancel(true)
+                  .setContentIntent(pIntent)
+              val mNotificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+              mNotificationManager.notify(393939, notificationBuilder.build())
+          }
+      }
+    learner_created: true
+  - name: src/main/add_icon-playstore.png
+    visible: true
+    learner_created: true
+  - name: src/main/res/layout/custom_dialog_edit_text.xml
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/23875#comment
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">Hyperskill</a>
+    to continue learning.
+  time: "Sat, 10 Feb 2024 12:31:36 UTC"
+record: -1

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Phrases.iml" filepath="$PROJECT_DIR$/.idea/Phrases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Phrases.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Phrases.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Phrases/task/task.Phrases.Phrases-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Phrases/task/task.Phrases.Phrases-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Phrases/task/task.Phrases.Phrases-task.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Phrases/task/task.Phrases.Phrases-task.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Phrases/task/task.Phrases.Phrases-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Phrases/task/task.Phrases.Phrases-task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Phrases/task/task.Phrases.Phrases-task.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Phrases/task/task.Phrases.Phrases-task.unitTest.iml" />
+    </modules>
+  </component>
+</project>

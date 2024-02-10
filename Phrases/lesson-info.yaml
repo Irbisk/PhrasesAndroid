@@ -1,0 +1,7 @@
+type: framework
+content:
+  - Basic UI
+  - RecyclerView
+  - Reminders
+  - Store data
+current_task: 3

@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion hs.android.compileSdkVersion
+
+    defaultConfig {
+
+        applicationId "org.hyperskill.phrases"
+        minSdkVersion hs.android.minSdkVersion
+        targetSdkVersion hs.android.targetSdkVersion
+        versionCode 1
+        versionName '1.0'
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas")
+            }
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    def kotlinVersion = hs.android.kotlinVersion
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+
+    def coreKtx = hs.android.lib.coreKtx
+    implementation "androidx.core:core-ktx:$coreKtx"
+
+    def appCompat = hs.android.lib.appCompat
+    implementation "androidx.appcompat:appcompat:$appCompat"
+
+    def constraintLayout = hs.android.lib.constraintLayout
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayout"
+
+    def material = hs.android.lib.material
+    implementation "com.google.android.material:material:$material"
+
+    def roomVersion = '2.3.0'
+    kapt "androidx.room:room-compiler:$roomVersion"
+    implementation "androidx.room:room-ktx:$roomVersion"
+    implementation "androidx.room:room-runtime:$roomVersion"
+
+    def lifecycleVersion = '2.2.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+
+}
